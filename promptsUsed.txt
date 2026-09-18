@@ -1,0 +1,14 @@
+1: npx playwright init-agents --loop=vscode
+
+2: Initialize a new Playwright project with MCP agents for VS Code integration, install the necessary dependencies including @playwright/test and browsers, run the seed test to validate the setup, and start the MCP server for local testing tools.
+
+3: I need to write a new test for the OrangeHRM dashboard. Please act as the Orchestrator and follow this strict lifecycle:
+First, read the rules in @playwright-test-planner.agent.md. Analyze the target page and output a step-by-step strategy for the test. Stop and wait for my approval.
+Once I approve the plan, switch your context to @playwright-test-generator.agent.md. Use those specific guidelines to write the actual Playwright TypeScript code based on the plan.
+After you write the code, I will execute the test locally. If the test fails and I paste an error log into this chat, immediately assume the role of @playwright-test-healer.agent.md to analyze the trace and patch the code. Before generating tests - Ensure a playwright.config.ts exists in the project root. If it does not, create one with testDir pointing to the test output directory. This is required for the VS Code Playwright Test Explorer to recognize test cases.
+
+4: Please run this test file. If it fails, immediately switch your context to @playwright-test-healer.agent.md. Read the terminal error output, analyze what went wrong with the locator, and automatically patch the code with a resilient alternative.
+
+
+https://www.youtube.com/watch?v=XcuvwueNGzo
+https://github.com/JagadeeshJayachandran/Playwright-agents-demo-
